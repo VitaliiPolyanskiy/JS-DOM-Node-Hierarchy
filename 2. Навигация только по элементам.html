@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="article">
+        <!-- Заголовок верхнего уровня h3 -->
+        <h3>Заголовок статьи</h3>
+        <!-- Параграф h3 -->
+        <p>Первый абзац</p>
+    </div>
+    <script>
+        let articleDiv = document.querySelector("div.article");
+
+        document.write("<br />");
+        let node = articleDiv.firstElementChild;
+        document.write(node.nodeName + "<br />");
+        while ((node = node.nextElementSibling) !== null) {
+            document.write(node.nodeName + "<br />");
+        }
+        document.write("<br />");
+        node = articleDiv.lastElementChild;
+        document.write(node.nodeName + "<br />");
+        while ((node = node.previousElementSibling) !== null) {
+            document.write(node.nodeName + "<br />");
+        }
+    </script>
+</body>
+</html>

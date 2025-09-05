@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <p>Параграф</p>
+  <div>DIV</div>
+
+  <script>
+   let par = document.querySelector('p');
+    alert(par.innerHTML) ; // читаем текущее содержимое
+    par.innerText = '<b>Новый параграф!</b>'; // заменяем содержимое
+    let div = document.querySelector('div');
+    alert(div.outerHTML) ; // читаем текущее содержимое
+    div.outerHTML = '<h1>Новый заголовок</h1>'; // заменяем содержимое
+  </script>
+</body>
+</html>
