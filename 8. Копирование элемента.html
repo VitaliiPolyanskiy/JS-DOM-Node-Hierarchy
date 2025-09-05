@@ -8,13 +8,16 @@
 </head>
 
 <body>
-    <div id="article">
+    <div>
         <h3>Заголовок статьи</h3>
         <p>Первый абзац</p>
         <p>Второй абзац</p>
     </div>
     <script>
-        let articleDiv = document.querySelector("div.article");
+        let articleDiv = document.querySelector("div");
+        let elem2 = document.createElement("h2");
+        elem2.style.color = "red";
+        elem2.textContent = "JavaScript. Document Object Model";
         let newArticleDiv = articleDiv.cloneNode(true);
         document.body.appendChild(newArticleDiv);
     </script>
